@@ -53,7 +53,6 @@ No **seu fork**: **Code → Codespaces → Create codespace on main**.
 git clone https://github.com/SEU-USUARIO/mwe-2026-2-lab01-duplaXX.git
 cd mwe-2026-2-lab01-duplaXX
 code .                              # aceite "Reopen in Container"
-export GITHUB_TOKEN=$(gh auth token)
 ```
 
 ### Verifique antes de seguir
