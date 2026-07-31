@@ -63,7 +63,7 @@ python ai/ask.py "diga apenas: ambiente ok"
 ollama list                          # qwen2.5:1.5b deve aparecer
 ```
 
-O `ask.py` tenta o **GitHub Models** primeiro (token que o Codespaces injeta) e cai para o **Ollama local** se a cota acabar ou faltar rede. Para forçar o local:
+O `ask.py` fala com o **Ollama local** que já vem instalado no devcontainer, com o modelo `qwen2.5:1.5b` baixado na criação do ambiente. Para escolher outro modelo local:
 
 ```bash
 OLLAMA_MODEL=qwen2.5:1.5b python ai/ask.py "..."
@@ -226,7 +226,7 @@ Submeta a URL do seu fork no formulário da disciplina, **até o fim da aula**. 
   post-create.sh      dependências + instalação do Ollama + download do modelo
   post-start.sh       garante o Ollama no ar a cada boot
 ai/
-  ask.py              cliente de IA: GitHub Models, com fallback para Ollama
+  ask.py              cliente de IA: Ollama local
 docs/                 onde entram o seu PRD.md e SDD.md
 README.md
 ```
